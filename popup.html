@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecurePass</title>
+    <link rel="stylesheet" href="styles/popup.css">
+</head>
+<body>
+    <h2>SecurePass</h2>
+    <input type="password" id="master-password" placeholder="Master Password">
+    <button id="unlock-btn">Unlock</button>
+    <div id="passwords-list" style="display:none;">
+        <h3>Saved Passwords</h3>
+        <ul id="password-list"></ul>
+        <input type="text" id="new-site" placeholder="Site">
+        <input type="text" id="new-username" placeholder="Username">
+        <input type="text" id="new-password" placeholder="Password">
+        <button id="save-password-btn">Save Password</button>
+    </div>
+    <!-- Include the necessary scripts -->
+    <script src="scripts/crypto.js"></script>
+    <script src="scripts/verifyMasterPassword.js"></script>
+    <script src="scripts/storage.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>
+
